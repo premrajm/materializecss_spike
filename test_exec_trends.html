@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <header>
+    <nav class="top-nav pink darken-4">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="brand-logo center">Test Trend Analyzer</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Trends Analysis</a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="pyramid_view.html">Test Pyramid</a></li>
+                        <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
+                        <li><a href="comparative_analysis.html">Comparative Analysis</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Failure Analysis</a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="failure_analysis.html">Failure Analysis</a></li>
+                        <li><a href="compare_runs.html">Compare Runs</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>        
+              <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;">
+      <li class="logo"><a id="logo-container" href="index.html" class="brand-logo">
+        <img class="responsive-img" src="https://www.thoughtworks.com/imgs/tw-logo.png"> </a>
+        </li>
+
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Trends Analysis</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="pyramid_view.html">Test Pyramid</a></li>
+                  <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
+                  <li><a href="comparative_analysis.html">Comparative Analysis</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Failure Analysis</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="failure_analysis.html">Failure Analysis</a></li>
+                <li><a href="compare_runs.html">Compare Runs</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>       
+      <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
+      </ul>
+    </header>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+        //js code
+        $(document).ready(function(){
+         $(".button-collapse").sideNav();
+         $('.collapsible').collapsible();
+       });
+        </script>
+      </body>
+      </html>
