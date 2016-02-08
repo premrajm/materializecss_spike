@@ -88,7 +88,9 @@
     </header>
     <main>
         <div class="row">
-          <div class="input-field col s6 offset-s3">
+
+          
+          <div class="input-field col l12 m3 s6 offset-s3">
             <select id="random">
               <option value="" disabled selected>Select sub project</option>
               <option value="1">Sub Project 1</option>
@@ -101,6 +103,46 @@
         <div class="section row">
           <div class="col s6 offset-s3">
             <div id="pyramid_graph"> </div>
+          </div>
+        </div>
+        <div class="section row">          
+          <div class="col s6 offset-s3">
+            <div id="test_details"> 
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th data-field="types">Test Types</th>
+                        <th data-field="name">Number Of Tests</th>
+                        <th data-field="price">Total Run Time</th>
+                        <th data-field="price">Test Type %</th>
+                        <th data-field="price">Passing %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Functional</td>
+                      <td>12</td>
+                      <td>00:00:23:045</td>
+                      <td>40</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Unit</td>
+                      <td>100</td>
+                      <td>00:00:43:235</td>
+                      <td>40</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Integration</td>
+                      <td>40</td>
+                      <td>00:00:56:345</td>
+                      <td>40</td>
+                      <td>30</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
           </div>
         </div>
     </main>
