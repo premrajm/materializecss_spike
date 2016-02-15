@@ -1,93 +1,155 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+     header, main, footer {
+       padding-left: 240px;
+     }
 
-<body>
-  <header>
-    <nav class="top-nav pink darken-4">
-        <div class="container">
+     @media only screen and (max-width : 992px) {
+       header, main, footer {
+         padding-left: 0;
+       }
+      }
+ </style>
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <nav>
           <div class="nav-wrapper">
-            <a class="brand-logo center">Test Trend Analyzer</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="side-nav" id="mobile-demo">
-              <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                  <li>
-                    <a class="collapsible-header active">Trends Analysis</a>
-                    <div class="collapsible-body">
-                      <ul>
-                        <li><a href="pyramid_view.html">Test Pyramid</a></li>
-                        <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
-                        <li class="active"><a href="#!">Comparative Analysis</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                  <li>
-                    <a class="collapsible-header">Failure Analysis</a>
-                    <div class="collapsible-body">
-                      <ul>
-                        <li><a href="failure_analysis.html">Failure Analysis</a></li>
-                        <li><a href="compare_runs.html">Compare Runs</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </li>        
-              <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
-            </ul>
-          </div>
+        <a href="#" class="brand-logo center">Test Trend Analyzer</a>
+        <div class="container">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
-      </nav>
-    
-    <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;">
-      <li class="logo"><a id="logo-container" href="index.html" class="brand-logo">
-        <img class="responsive-img" src="https://www.thoughtworks.com/imgs/tw-logo.png"> </a>
-        </li>
-
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li>
-              <a class="collapsible-header active">Trends Analysis</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="pyramid_view.html">Test Pyramid</a></li>
-                  <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
-                  <li class="active"><a href="#!">Comparative Analysis</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Failure Analysis</a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="failure_analysis.html">Failure Analysis</a></li>
-                <li><a href="compare_runs.html">Compare Runs</a></li>
-              </ul>
-            </div>
+        <ul class="side-nav" id="mobile-demo">
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Trends Analysis</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="pyramid_view.html">Test Pyramid</a></li>
+                    <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
+                    <li><a href="comparative_analysis.html">Comparative Analysis</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Failure Analysis</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="failure_analysis.html">Failure Analysis</a></li>
+                    <li><a href="compare_runs.html">Compare Runs</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>        
+          <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
         </ul>
-      </li>       
-      <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
-      </ul>
-    </header>
+          </div>
+        </nav>
+      </div>
+
+    <div class="col s12 m4 l2">
+      <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;top: auto;">        
+
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Trends Analysis</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="pyramid_view.html">Test Pyramid</a></li>
+                      <li><a href="test_exec_trends.html">Test Execution Trends</a></li>
+                      <li><a href="comparative_analysis.html">Comparative Analysis</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Failure Analysis</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="failure_analysis.html">Failure Analysis</a></li>
+                      <li><a href="compare_runs.html">Compare Runs</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>       
+            <li class="bold"><a href="upload_test_data.html" class="waves-effect waves-teal">Upload Test Data</a></li>
+          </ul>
 
 
+    </div>
+    <main>
+    <div class="col s12 m8 l10">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <select>
+            <option value="" disabled selected>Select Project</option>
+            <option value="1">Project 1</option>
+            <option value="2">Project 2</option>
+            <option value="33">Project 33</option>
+          </select>
+        </div>
+        <div class="input-field col s12 m6">
+          <select>
+            <option value="" disabled selected>Select Sub Project</option>
+              <option value="1">Sub Project 1</option>
+              <option value="2">Sub Project 2</option>
+              <option value="3">Sub Project 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+            <input type="date" class="datepicker"/>
+            <label>Start Date</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <input type="date" class="datepicker"/>
+            <label>End Date</label>
+        </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12 m10">
+         <select multiple>
+          <option value="" disabled selected>Select Test Category</option>
+              <option value="1">Unit Test</option>
+              <option value="2">Regression Test</option>
+              <option value="3">Smoke Test</option>
+              <option value="4">Sanity Test</option>
+              <option value="5">Acceptance Test</option>
+              <option value="6">Performance Test</option>
+              <option value="7">Build Verification Test</option>
+              <option value="8">Integration Test</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+    </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
@@ -95,7 +157,9 @@
         $(document).ready(function(){
          $(".button-collapse").sideNav();
          $('.collapsible').collapsible();
+         $('select').material_select();
+         $('.datepicker').pickadate({ selectMonths: true, selectYears: 5 });
        });
-        </script>
-      </body>
-      </html>
+    </script>  
+  </body>
+</html>
